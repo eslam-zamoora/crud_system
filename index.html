@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD system</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="p-5 shadow-lg w-75 mx-auto mt-5">
+        <h2 class="fw-bolder">CRUD SYSTEM</h2>
+        <label>Product Name</label>
+        <input type="text" id="productName" class="form-control" >
+        <label>Product Category</label>
+        <input type="text" id="productCategory" class="form-control">
+        <label>Product Price</label>
+        <input type="text" id="productPrice" class="form-control">
+        <labe>Product Description</labe>
+        <textarea name="" id="ProductDescription" class="form-control mb-5"></textarea>
+        <button class="btn btn-primary" id="change">Add product</button>
+        <button class="btn btn-danger" onclick="reset()">Clear</button>
+    </div>
+    <input type="text" class="form-control w-50 m-auto mt-5 shadow" id="searchInput" onkeyup="searching()" placeholder="search">
+
+    <div class="table-responsive mt-5 w-75 m-auto">
+        <table class="table ">
+            <thead>
+                <tr>
+                    <th scope="col">index</th>
+                    <th scope="col">name</th>
+                    <th scope="col">category</th>
+                    <th scope="col">price</th>
+                    <th scope="col">desc</th>
+                    <th scope="col">update</th>
+                    <th scope="col">delete</th>
+                </tr>
+            </thead>
+            <tbody id="adding">
+               
+            </tbody>
+        </table>
+    </div>
+    
+
+    
+ 
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
